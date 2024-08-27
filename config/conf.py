@@ -2,8 +2,7 @@ import os
 
 
 class Conf:
-    path: str = ("/home/cagri/Desktop/code/python/assoicate_cloud_engineer" \
-                 "/pubsub/config/pubsub-my-project-633da0ae8ee2.json") 
+    path: str = ("/YOUR/PATH/TO/KEY.json") 
     
     def conf() -> dict:
         json_key: str = Conf.path
