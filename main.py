@@ -35,7 +35,8 @@ def read_data_and_publish():
         publish_message(row_data, topic_path, publisher)
         print(f"Published row {index}")
         time.sleep(5)
-
+        
+@loggingwrapper
 def publish_message(data, topic_path, publisher):
     message_data = json.dumps(data).encode("utf-8")
 
